@@ -1,0 +1,259 @@
+:root{
+    --body-color:#f7f7f7;
+    --main-color:#111;
+    --hover-color: #1ed13b;
+    --white-color:#fff;
+    --icon-color:#007aff;
+}
+body{
+    background: var(--body-color);
+}
+/* MY keyframes */
+.active{
+    color: var(--hover-color) !important;
+}
+.d-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tab-content>.active{
+        display: flex;
+}
+/* start header section */
+
+/* nav section */
+.header  a{
+    color:var(--main-color)
+}
+.header  a:hover{
+    color: var(--hover-color);
+}
+
+/* carousel section */
+.header .carousel-caption{
+    border-top:5px solid var(--hover-color);
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    bottom: 10%;
+}
+.header .carousel-caption a{
+    width: 200px;
+    height: 50px;
+    border: 5px solid var(--hover-color);
+    color: #fff;
+    transition: 1s linear;
+}
+.header .carousel-caption a:hover{
+    background-color: var(--hover-color);
+}
+/* end header section */
+
+
+/* start main section */
+
+.main .cards{
+
+}
+.main .cards > div{
+    padding: 15px;
+}
+.main .cards > div .content{
+    height: 300px;
+    background: var(--white-color);
+}
+.main .cards > div .content p{
+    font-size: 14px;
+    opacity: 0.7;
+}
+.main .cards .content div:first-child{
+    position: relative;
+
+}
+.main .cards .content div:first-child i{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: var(--icon-color);
+}
+
+.main .cards div:nth-child(2) .content div:first-child i{
+    color:rgb(255, 167, 110);
+}
+.main .cards div:nth-child(3) .content div:first-child i{
+    color:rgb(232, 3, 104);
+}
+.main .cards div:nth-child(4) .content div:first-child i{
+    color:rgb(255, 187, 44);
+}
+.main .cards div:nth-child(5) .content div:first-child i{
+    color:rgb(255, 88, 40);
+}
+.main .cards div:nth-child(6) .content div:first-child i{
+    color:#11dbcf;
+}
+.main .cards  .content div:first-child:hover i{
+    color: var(--white-color) !important;
+    transition: 0.5s;
+}
+
+.main .cards  .content div:first-child:hover svg path{
+    transition: 0.5s;
+    fill: var(--icon-color);
+}
+.main .cards div:nth-child(2) .content div:first-child:hover svg path{
+    fill: rgb(255, 167, 110);
+}
+.main .cards div:nth-child(3) .content div:first-child:hover svg path{
+    fill: rgb(232, 3, 104);
+}
+.main .cards div:nth-child(4) .content div:first-child:hover svg path{
+    fill: rgb(255, 187, 44);
+}
+.main .cards div:nth-child(5) .content div:first-child:hover svg path{
+    fill: rgb(255, 88, 40);
+}
+.main .cards div:nth-child(6) .content div:first-child:hover svg path{
+    fill: #11dbcf;
+}
+/* end main section */
+
+/* start first section */
+
+.tab-content #All > div{
+    transition: 0.5s;
+}
+.nav-tabs .nav-link.active{
+    color: var(--white-color) !important;
+    background: var(--hover-color);
+}
+@media (min-width:992px) and (max-width:1199px){
+    .tab-content #All > div:nth-child(5),.tab-content #All > div:nth-child(7),.tab-content #All > div:nth-child(9){
+        transform: translateY(-45px);
+     }
+     .tab-content #All > div:nth-child(4),.tab-content #All > div:nth-child(6),.tab-content #All > div:nth-child(8){
+        transform: translateY(-145px);
+     }
+
+
+}
+@media (min-width:768px) and (max-width:992px) {
+    .tab-content #All > div:nth-child(5), .tab-content #All > div:nth-child(7){
+        transform: translateY(-30px);
+    }
+    .tab-content #All > div:nth-child(4),.tab-content #All > div:nth-child(6),.tab-content #All > div:nth-child(8){
+        transform: translateY(-105px);
+     }
+     .tab-content #All > div:nth-child(9){
+        transform: translate(335px,-100px);
+     
+     }
+}
+@media (min-width:1200px) {
+    .tab-content #All > div:nth-child(5),.tab-content #All > div:nth-child(8){
+        transform: translateY(-115px);
+     }
+     .tab-content #All > div:nth-child(6),.tab-content #All > div:nth-child(9){
+        transform: translateY(-150px);
+     
+     }
+     .tab-content #All > div:nth-child(7){
+        transform: translateY(-280px);
+     }
+}
+@media (min-width:1400px) {
+    .tab-content #All > div:nth-child(5),.tab-content #All > div:nth-child(8){
+        transform: translateY(-135px);
+     }
+     .tab-content #All > div:nth-child(6),.tab-content #All > div:nth-child(9){
+        transform: translateY(-180px);
+     
+     }
+     .tab-content #All > div:nth-child(7){
+        transform: translateY(-330px);
+     }
+}
+
+.tab-content .tab-pane > div{
+    position: relative;
+    overflow: hidden;
+}
+.tab-content .tab-pane > div .slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 60px;
+    border-radius: 10px;
+    background: #ffffff70;
+    position: absolute;
+    top: 5%;
+    left: 12.5%;
+    transform: translateY(-120px);
+    transition: 0.5s;
+    color: var(--main-color);
+}
+.tab-content .tab-pane > div:hover .slider{
+    transform: translateY(0);
+}
+.tab-content .tab-pane > div .slider a{
+    color: var(--main-color);
+}
+.tab-content .tab-pane > div .slider a:hover{
+    color: var(--hover-color);
+}
+ /* ////////////// */
+
+.clients img{
+    width: 50%;
+    height: 40px;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+.clients div div > div:hover img{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+.clients div div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000060;
+}
+
+/* end first section */
+
+/* start footer */
+
+.footer p ,.footer span,.footer a{
+    color:#ffffff80;
+    transition: 0.5s;
+}
+.footer i{
+    color: var(--hover-color);
+    margin-right: 5px;
+}
+.footer a:hover{
+    color: #fff;
+}
+.footer form span:hover{
+    background: #028217 !important;
+}
+
+.social-links a{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: #1e1e1e;
+}
+.social-links a:hover{
+    background: var(--hover-color);
+}
+/* end footer */
+
